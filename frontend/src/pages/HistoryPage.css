@@ -1,0 +1,2295 @@
+/* =========================================================
+
+   HISTORY PAGE
+
+   РЎРІС–С‚Р»РёР№ СЃС‚РёР»СЊ MOVA
+
+   \========================================================= */
+
+
+
+.history-page {
+
+  min-height: 100vh;
+
+  background:
+
+    radial-gradient(
+
+      circle at 82% 8%,
+
+      rgba(210, 126, 145, 0.08),
+
+      transparent 30%
+
+    ),
+
+    linear-gradient(
+
+      180deg,
+
+      #fffdfd 0%,
+
+      #fffafa 45%,
+
+      #fffdfd 100%
+
+    );
+
+
+
+  color: #443b3d;
+
+  font-family: inherit;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   HEADER
+
+   \========================================================= */
+
+
+
+.history-header {
+
+  height: 96px;
+
+  padding: 0 5%;
+
+
+
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+
+
+
+  background: rgba(255, 255, 255, 0.94);
+
+
+
+  border-bottom: 1px solid #f0dfe2;
+
+
+
+  box-shadow:
+
+    0 1px 0 rgba(115, 72, 81, 0.02);
+
+
+
+  position: relative;
+
+  z-index: 10;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   BACK BUTTON
+
+   \========================================================= */
+
+
+
+.history-back-button {
+
+  width: fit-content;
+
+
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+
+
+  padding: 11px 17px;
+
+
+
+  border: 1px solid #edcdd3;
+
+  border-radius: 12px;
+
+
+
+  background: #ffffff;
+
+
+
+  color: #514749;
+
+
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 650;
+
+
+
+  cursor: pointer;
+
+
+
+  transition:
+
+    background 0.2s ease,
+
+    border-color 0.2s ease,
+
+    color 0.2s ease,
+
+    transform 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+.history-back-button:hover {
+
+  transform: translateX(-2px);
+
+
+
+  background: #fff7f8;
+
+
+
+  border-color: #d994a3;
+
+
+
+  color: #bd6f80;
+
+
+
+  box-shadow:
+
+    0 5px 16px rgba(183, 104, 122, 0.08);
+
+}
+
+
+
+
+
+/* =========================================================
+
+   LOGO
+
+   \========================================================= */
+
+
+
+.history-logo {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+
+
+.history-logo-mark {
+
+  width: 45px;
+
+  height: 45px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  border: 1px solid #e8bcc5;
+
+  border-radius: 13px;
+
+
+
+  background: #fffafa;
+
+
+
+  color: #c77689;
+
+
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+}
+
+
+
+.history-logo > span:last-child {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+.history-logo strong {
+
+  color: #3f3739;
+
+
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 4px;
+
+}
+
+
+
+.history-logo small {
+
+  margin-top: 3px;
+
+
+
+  color: #aa9b9e;
+
+
+
+  font-size: 9px;
+
+
+
+  letter-spacing: 0.5px;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   CONTENT
+
+   \========================================================= */
+
+
+
+.history-container {
+
+  width: min(1000px, calc(100% - 40px));
+
+
+
+  margin: 0 auto;
+
+
+
+  padding: 65px 0 100px;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   PAGE TITLE
+
+   \========================================================= */
+
+
+
+.history-title {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+
+
+  margin-bottom: 35px;
+
+}
+
+
+
+.history-title-icon {
+
+  width: 56px;
+
+  height: 56px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  flex-shrink: 0;
+
+
+
+  border-radius: 16px;
+
+
+
+  color: #c87488;
+
+
+
+  background: #fdecef;
+
+
+
+  border: 1px solid #f6dbe0;
+
+}
+
+
+
+.history-title p {
+
+  margin: 0 0 5px;
+
+
+
+  color: #c67587;
+
+
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+}
+
+
+
+.history-title h1 {
+
+  margin: 0;
+
+
+
+  color: #3f3739;
+
+
+
+  font-size: 32px;
+
+  font-weight: 750;
+
+
+
+  letter-spacing: -0.6px;
+
+}
+
+
+
+.history-title > div > span {
+
+  display: block;
+
+
+
+  margin-top: 7px;
+
+
+
+  color: #9e9294;
+
+
+
+  font-size: 14px;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   SUMMARY
+
+   \========================================================= */
+
+
+
+.history-summary {
+
+  min-height: 76px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+
+
+  margin-bottom: 25px;
+
+
+
+  padding: 17px 21px;
+
+
+
+  border: 1px solid #eedde0;
+
+  border-radius: 17px;
+
+
+
+  background:
+
+    linear-gradient(
+
+      135deg,
+
+      #ffffff 0%,
+
+      #fff9fa 100%
+
+    );
+
+
+
+  color: #c77487;
+
+
+
+  box-shadow:
+
+    0 7px 25px rgba(121, 78, 88, 0.035);
+
+}
+
+
+
+.history-summary div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+}
+
+
+
+.history-summary span {
+
+  color: #a29598;
+
+
+
+  font-size: 12px;
+
+}
+
+
+
+.history-summary strong {
+
+  color: #453c3e;
+
+
+
+  font-size: 22px;
+
+  font-weight: 750;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   DAYS
+
+   \========================================================= */
+
+
+
+.history-days {
+
+  display: flex;
+
+  flex-direction: column;
+
+
+
+  gap: 18px;
+
+}
+
+
+
+.history-day {
+
+  overflow: hidden;
+
+
+
+  border: 1px solid #eedde0;
+
+  border-radius: 20px;
+
+
+
+  background: #ffffff;
+
+
+
+  box-shadow:
+
+    0 8px 28px rgba(126, 82, 92, 0.04);
+
+
+
+  transition:
+
+    border-color 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+.history-day:hover {
+
+  border-color: #e8cbd1;
+
+
+
+  box-shadow:
+
+    0 10px 32px rgba(126, 82, 92, 0.06);
+
+}
+
+
+
+
+
+/* =========================================================
+
+   DAY HEADER
+
+   \========================================================= */
+
+
+
+.history-day-header {
+
+  width: 100%;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+
+
+  padding: 20px 22px;
+
+
+
+  border: 0;
+
+
+
+  background:
+
+    linear-gradient(
+
+      135deg,
+
+      #fff8f9 0%,
+
+      #fffdfd 100%
+
+    );
+
+
+
+  color: #433a3c;
+
+
+
+  text-align: left;
+
+
+
+  cursor: pointer;
+
+
+
+  transition:
+
+    background 0.2s ease;
+
+}
+
+
+
+.history-day-header:hover {
+
+  background:
+
+    linear-gradient(
+
+      135deg,
+
+      #fff3f5 0%,
+
+      #fffafa 100%
+
+    );
+
+}
+
+
+
+.history-day-date {
+
+  display: flex;
+
+  align-items: center;
+
+
+
+  gap: 13px;
+
+}
+
+
+
+.history-day-calendar {
+
+  width: 42px;
+
+  height: 42px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  flex-shrink: 0;
+
+
+
+  border-radius: 12px;
+
+
+
+  background: #fdecef;
+
+
+
+  color: #c87488;
+
+}
+
+
+
+.history-day-date > div {
+
+  display: flex;
+
+  flex-direction: column;
+
+
+
+  gap: 4px;
+
+}
+
+
+
+.history-day-date strong {
+
+  color: #433a3c;
+
+
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+}
+
+
+
+.history-day-date > div > span {
+
+  color: #a3989a;
+
+
+
+  font-size: 12px;
+
+}
+
+
+
+.history-day-arrow {
+
+  width: 35px;
+
+  height: 35px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  border-radius: 10px;
+
+
+
+  color: #c77487;
+
+
+
+  background: #fcecef;
+
+
+
+  transition:
+
+    background 0.2s ease,
+
+    transform 0.2s ease;
+
+}
+
+
+
+.history-day-header:hover .history-day-arrow {
+
+  background: #f8dfe4;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   ENTRIES CONTAINER
+
+   \========================================================= */
+
+
+
+.history-day-entries {
+
+  padding: 0 20px;
+
+
+
+  background: #ffffff;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   SINGLE ENTRY
+
+   \========================================================= */
+
+
+
+.history-entry {
+
+  display: grid;
+
+
+
+  grid-template-columns:
+
+    48px minmax(0, 1fr);
+
+
+
+  gap: 16px;
+
+
+
+  padding: 22px 2px;
+
+
+
+  border-bottom: 1px solid #f1e5e7;
+
+}
+
+
+
+.history-entry:last-child {
+
+  border-bottom: 0;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   ENTRY ICON
+
+   \========================================================= */
+
+
+
+.history-entry-icon {
+
+  width: 48px;
+
+  height: 48px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  border-radius: 14px;
+
+
+
+  color: #c77487;
+
+
+
+  background: #fdecef;
+
+
+
+  border: 1px solid #fae2e7;
+
+}
+
+
+
+.history-entry-main {
+
+  min-width: 0;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   ENTRY HEADING
+
+   \========================================================= */
+
+
+
+.history-entry-heading {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+
+
+  gap: 20px;
+
+}
+
+
+
+.history-entry-type {
+
+  display: block;
+
+
+
+  margin-bottom: 5px;
+
+
+
+  color: #c77487;
+
+
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+
+
+.history-entry-heading h2 {
+
+  margin: 0;
+
+
+
+  color: #41383a;
+
+
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+}
+
+
+
+.history-entry-time {
+
+  display: flex;
+
+  align-items: center;
+
+
+
+  gap: 7px;
+
+
+
+  flex-shrink: 0;
+
+
+
+  color: #a3999b;
+
+
+
+  font-size: 12px;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   CONFIDENCE
+
+   \========================================================= */
+
+
+
+.history-entry-confidence {
+
+  margin-top: 15px;
+
+}
+
+
+
+.history-confidence-info {
+
+  display: flex;
+
+  align-items: center;
+
+
+
+  gap: 7px;
+
+}
+
+
+
+.history-confidence-info span {
+
+  color: #918588;
+
+
+
+  font-size: 12px;
+
+}
+
+
+
+.history-confidence-info strong {
+
+  color: #554a4d;
+
+
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   PROGRESS BAR
+
+   \========================================================= */
+
+
+
+.history-progress {
+
+  width: 100%;
+
+  height: 5px;
+
+
+
+  margin-top: 8px;
+
+
+
+  overflow: hidden;
+
+
+
+  border-radius: 100px;
+
+
+
+  background: #f1e5e7;
+
+}
+
+
+
+.history-progress span {
+
+  display: block;
+
+
+
+  height: 100%;
+
+
+
+  border-radius: inherit;
+
+
+
+  background:
+
+    linear-gradient(
+
+      90deg,
+
+      #e3a0af,
+
+      #c87387
+
+    );
+
+
+
+  transition: width 0.4s ease;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   TEXT ENTRY
+
+   \========================================================= */
+
+
+
+.history-entry-text {
+
+  margin: 14px 0 0;
+
+
+
+  color: #8f8386;
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.6;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   ACTION BUTTONS
+
+   \========================================================= */
+
+
+
+.history-entry-actions {
+
+  display: flex;
+
+  align-items: center;
+
+
+
+  gap: 10px;
+
+
+
+  margin-top: 17px;
+
+}
+
+
+
+.history-view-button,
+
+.history-delete-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  gap: 7px;
+
+
+
+  min-height: 38px;
+
+
+
+  padding: 0 14px;
+
+
+
+  border-radius: 10px;
+
+
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+
+
+  cursor: pointer;
+
+
+
+  transition:
+
+    background 0.2s ease,
+
+    border-color 0.2s ease,
+
+    color 0.2s ease,
+
+    transform 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   VIEW BUTTON
+
+   \========================================================= */
+
+
+
+.history-view-button {
+
+  border: 1px solid #e4b8c2;
+
+
+
+  background: #fffafb;
+
+
+
+  color: #b9687b;
+
+}
+
+
+
+.history-view-button:hover {
+
+  transform: translateY(-1px);
+
+
+
+  background: #fcecef;
+
+
+
+  border-color: #d58a9b;
+
+
+
+  color: #a95569;
+
+
+
+  box-shadow:
+
+    0 5px 14px rgba(190, 106, 126, 0.1);
+
+}
+
+
+
+
+
+/* =========================================================
+
+   DELETE BUTTON
+
+   \========================================================= */
+
+
+
+.history-delete-button {
+
+  border: 1px solid #efc6cc;
+
+
+
+  background: #fffafa;
+
+
+
+  color: #c56f7c;
+
+}
+
+
+
+.history-delete-button:hover:not(:disabled) {
+
+  transform: translateY(-1px);
+
+
+
+  background: #fff0f2;
+
+
+
+  border-color: #dc9ca7;
+
+
+
+  color: #b65363;
+
+
+
+  box-shadow:
+
+    0 5px 14px rgba(190, 83, 100, 0.08);
+
+}
+
+
+
+.history-delete-button:disabled {
+
+  opacity: 0.45;
+
+
+
+  cursor: not-allowed;
+
+
+
+  transform: none;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   EMPTY / LOADING / ERROR
+
+   \========================================================= */
+
+
+
+.history-empty,
+
+.history-message,
+
+.history-error {
+
+  padding: 70px 25px;
+
+
+
+  text-align: center;
+
+
+
+  border: 1px solid #eedde0;
+
+
+
+  border-radius: 20px;
+
+
+
+  background: #ffffff;
+
+
+
+  box-shadow:
+
+    0 8px 28px rgba(126, 82, 92, 0.035);
+
+}
+
+
+
+.history-empty > span {
+
+  width: 58px;
+
+  height: 58px;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  margin: 0 auto 16px;
+
+
+
+  border-radius: 16px;
+
+
+
+  color: #c77487;
+
+
+
+  background: #fdecef;
+
+}
+
+
+
+.history-empty h2 {
+
+  margin: 0;
+
+
+
+  color: #443b3d;
+
+
+
+  font-size: 19px;
+
+}
+
+
+
+.history-empty p {
+
+  margin: 8px 0 20px;
+
+
+
+  color: #9b8f92;
+
+
+
+  font-size: 13px;
+
+}
+
+
+
+.history-empty button {
+
+  padding: 11px 18px;
+
+
+
+  border: 1px solid #c9788b;
+
+
+
+  border-radius: 11px;
+
+
+
+  background: #c9788b;
+
+
+
+  color: #ffffff;
+
+
+
+  font-family: inherit;
+
+
+
+  font-weight: 650;
+
+
+
+  cursor: pointer;
+
+
+
+  transition:
+
+    background 0.2s ease,
+
+    transform 0.2s ease,
+
+    box-shadow 0.2s ease;
+
+}
+
+
+
+.history-empty button:hover {
+
+  transform: translateY(-1px);
+
+
+
+  background: #b9677a;
+
+
+
+  box-shadow:
+
+    0 7px 18px rgba(185, 103, 122, 0.17);
+
+}
+
+
+
+.history-message {
+
+  color: #95898c;
+
+}
+
+
+
+.history-error {
+
+  color: #c85e6e;
+
+
+
+  background: #fff8f9;
+
+
+
+  border-color: #f1cdd3;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   ICON FIX
+
+   \========================================================= */
+
+
+
+.history-page svg {
+
+  stroke: currentColor;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   BUTTON RESET
+
+   Р©РѕР± РіР»РѕР±Р°Р»СЊРЅРёР№ CSS РЅРµ СЂРѕР±РёРІ РєРЅРѕРїРєРё Р±С–Р»РёРјРё
+
+   \========================================================= */
+
+
+
+.history-page button {
+
+  font-family: inherit;
+
+}
+
+
+
+.history-day-header,
+
+.history-back-button,
+
+.history-view-button,
+
+.history-delete-button {
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   TABLET
+
+   \========================================================= */
+
+
+
+@media (max-width: 900px) {
+
+  .history-container {
+
+    width: min(100% - 32px, 1000px);
+
+
+
+    padding-top: 50px;
+
+  }
+
+
+
+  .history-header {
+
+    padding-left: 28px;
+
+    padding-right: 28px;
+
+  }
+
+}
+
+
+
+
+
+/* =========================================================
+
+   MOBILE
+
+   \========================================================= */
+
+
+
+@media (max-width: 650px) {
+
+  .history-header {
+
+    height: 80px;
+
+
+
+    padding: 0 18px;
+
+
+
+    grid-template-columns: 1fr auto;
+
+  }
+
+
+
+  .history-header-space {
+
+    display: none;
+
+  }
+
+
+
+  .history-logo {
+
+    gap: 8px;
+
+  }
+
+
+
+  .history-logo-mark {
+
+    width: 40px;
+
+    height: 40px;
+
+
+
+    border-radius: 11px;
+
+  }
+
+
+
+  .history-logo strong {
+
+    font-size: 15px;
+
+
+
+    letter-spacing: 3px;
+
+  }
+
+
+
+  .history-logo small {
+
+    display: none;
+
+  }
+
+
+
+  .history-back-button {
+
+    padding: 9px 13px;
+
+
+
+    font-size: 13px;
+
+  }
+
+
+
+
+
+  /* CONTENT */
+
+
+
+  .history-container {
+
+    width: calc(100% - 28px);
+
+
+
+    padding-top: 40px;
+
+    padding-bottom: 70px;
+
+  }
+
+
+
+
+
+  /* TITLE */
+
+
+
+  .history-title {
+
+    align-items: flex-start;
+
+
+
+    gap: 13px;
+
+
+
+    margin-bottom: 27px;
+
+  }
+
+
+
+  .history-title-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+
+
+    border-radius: 14px;
+
+  }
+
+
+
+  .history-title h1 {
+
+    font-size: 27px;
+
+  }
+
+
+
+  .history-title > div > span {
+
+    font-size: 13px;
+
+
+
+    line-height: 1.5;
+
+  }
+
+
+
+
+
+  /* SUMMARY */
+
+
+
+  .history-summary {
+
+    min-height: 70px;
+
+
+
+    padding: 15px 17px;
+
+
+
+    border-radius: 15px;
+
+  }
+
+
+
+
+
+  /* DAY */
+
+
+
+  .history-day {
+
+    border-radius: 17px;
+
+  }
+
+
+
+  .history-day-header {
+
+    padding: 17px;
+
+  }
+
+
+
+  .history-day-calendar {
+
+    width: 40px;
+
+    height: 40px;
+
+  }
+
+
+
+  .history-day-date strong {
+
+    font-size: 15px;
+
+  }
+
+
+
+  .history-day-entries {
+
+    padding: 0 16px;
+
+  }
+
+
+
+
+
+  /* ENTRY */
+
+
+
+  .history-entry {
+
+    grid-template-columns: 1fr;
+
+
+
+    gap: 12px;
+
+
+
+    padding-top: 18px;
+
+    padding-bottom: 18px;
+
+  }
+
+
+
+  .history-entry-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+
+
+    border-radius: 12px;
+
+  }
+
+
+
+  .history-entry-heading {
+
+    flex-direction: column;
+
+
+
+    gap: 9px;
+
+  }
+
+
+
+  .history-entry-heading h2 {
+
+    font-size: 18px;
+
+  }
+
+
+
+  .history-entry-time {
+
+    font-size: 11px;
+
+  }
+
+
+
+
+
+  /* ACTIONS */
+
+
+
+  .history-entry-actions {
+
+    flex-direction: column;
+
+
+
+    align-items: stretch;
+
+
+
+    gap: 8px;
+
+  }
+
+
+
+  .history-view-button,
+
+  .history-delete-button {
+
+    width: 100%;
+
+
+
+    min-height: 42px;
+
+  }
+
+}
+
+
+
+
+
+/* =========================================================
+
+   VERY SMALL PHONES
+
+   \========================================================= */
+
+
+
+@media (max-width: 420px) {
+
+  .history-container {
+
+    width: calc(100% - 20px);
+
+  }
+
+
+
+  .history-header {
+
+    padding: 0 10px;
+
+  }
+
+
+
+  .history-back-button {
+
+    padding: 8px 10px;
+
+  }
+
+
+
+  .history-logo strong {
+
+    font-size: 14px;
+
+  }
+
+
+
+  .history-title h1 {
+
+    font-size: 24px;
+
+  }
+
+
+
+  .history-title-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+  }
+
+
+
+  .history-day-header {
+
+    padding: 14px;
+
+  }
+
+
+
+  .history-day-date {
+
+    gap: 10px;
+
+  }
+
+
+
+  .history-day-date strong {
+
+    font-size: 14px;
+
+  }
+
+
+
+  .history-day-arrow {
+
+    width: 32px;
+
+    height: 32px;
+
+  }
+
+
+
+  .history-day-entries {
+
+    padding: 0 13px;
+
+  }
+
+  }
+
+/* DARK THEME вЂ” HISTORY */
+html[data-theme='dark'] .history-page {
+
+  background: #171417;
+
+  color: #f5edf0;
+
+}
+html[data-theme='dark'] .history-header {
+
+  background: #211b1f;
+
+  border-bottom-color: #46363e;
+
+}
+html[data-theme='dark'] .history-title h1,
+html[data-theme='dark'] .history-summary strong,
+html[data-theme='dark'] .history-day-date strong,
+html[data-theme='dark'] .history-entry-heading h2,
+html[data-theme='dark'] .history-confidence-info strong {
+
+  color: #f5edf0;
+
+}
+html[data-theme='dark'] .history-title > div > span,
+html[data-theme='dark'] .history-summary span,
+html[data-theme='dark'] .history-day-date > div > span,
+html[data-theme='dark'] .history-entry-text,
+html[data-theme='dark'] .history-entry-time,
+html[data-theme='dark'] .history-confidence-info span {
+
+  color: #b7a8af;
+
+}
+html[data-theme='dark'] .history-summary,
+html[data-theme='dark'] .history-day,
+html[data-theme='dark'] .history-day-entries,
+html[data-theme='dark'] .history-empty,
+html[data-theme='dark'] .history-message {
+
+  background: #272125;
+
+  border-color: #493940;
+
+}
+html[data-theme='dark'] .history-day-header {
+
+  background: #2c2328;
+
+  color: #f5edf0;
+
+}
+html[data-theme='dark'] .history-day-header:hover {
+
+  background: #382b32;
+
+}
+html[data-theme='dark'] .history-entry {
+
+  border-bottom-color: #493940;
+
+}
+html[data-theme='dark'] .history-progress {
+
+  background: #493940;
+
+}
+html[data-theme='dark'] .history-title-icon,
+html[data-theme='dark'] .history-day-calendar,
+html[data-theme='dark'] .history-entry-icon,
+html[data-theme='dark'] .history-day-arrow {
+
+  background: #422c36;
+
+  color: #df8fa4;
+
+  border-color: #62404e;
+
+}
+html[data-theme='dark'] .history-view-button,
+html[data-theme='dark'] .history-delete-button,
+html[data-theme='dark'] .history-back-button {
+
+  background: #30262b;
+
+  color: #e6a0b1;
+
+  border-color: #684653;
+
+}
+html[data-theme='dark'] .history-view-button:hover,
+html[data-theme='dark'] .history-delete-button:hover:not(:disabled),
+html[data-theme='dark'] .history-back-button:hover {
+
+  background: #45303a;
+
+}
+html[data-theme='dark'] .history-error {
+
+  background: #38242b;
+
+  color: #f0a4b0;
+
+  border-color: #684653;
+
+}
+
+/* Dark theme: additional text and surfaces */
+html[data-theme='dark'] .history-title p,
+html[data-theme='dark'] .history-entry-type {
+  color: #d78395;
+}
+
+html[data-theme='dark'] .history-empty h2,
+html[data-theme='dark'] .history-logo strong {
+  color: #f5edef;
+}
+
+html[data-theme='dark'] .history-empty p,
+html[data-theme='dark'] .history-logo small,
+html[data-theme='dark'] .history-message {
+  color: #aa9da1;
+}
+
+html[data-theme='dark'] .history-day:hover {
+  border-color: #654b52;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme='dark'] .history-error {
+  border-color: #684653;
+}
+
+html[data-theme='dark'] .history-empty > span,
+html[data-theme='dark'] .history-logo-mark {
+  background: #39272c;
+  color: #d78395;
+  border-color: #4a373c;
+}
+
+html[data-theme='dark'] .history-empty button {
+  background: #c9788b;
+  color: #ffffff;
+  border-color: #c9788b;
+}
+
+html[data-theme='dark'] .history-empty button:hover {
+  background: #b9677a;
+}

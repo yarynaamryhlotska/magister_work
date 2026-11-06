@@ -1,0 +1,35 @@
+# Секретні налаштування
+.env
+backend/.env
+
+# База даних
+*.db
+*.db-journal
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# macOS та VS Code
+.DS_Store
+.vscode/
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+backend/uploads/
+emotion_diary_env/
+.venv/
+venv/
+dist/
+.DS_Store
